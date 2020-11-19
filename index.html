@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title> zodiac </title>
+    <script>
+
+       function animalFind()
+        {
+            var year = document.getElementById("year").value;
+          if(year % 12 == 0)
+          {
+           document.getElementById("picture").innerHTML = "<img src = 'monkey.jpg'>";
+            }
+
+            if(year % 12 == 1)
+            {
+             document.getElementById("picture").innerHTML = "<img src = 'rooster.jpg'>";
+              }
+
+               if(year % 12 == 2)
+               {
+                 document.getElementById("picture").innerHTML = "<img src = 'dog.jpg'>";
+                }
+
+                 if(year % 12 == 3)
+                 {
+                   document.getElementById("picture").innerHTML = "<img src = 'pig.jpg'>";
+                  }
+
+                   if(year % 12 == 4)
+                   {
+                     document.getElementById("picture").innerHTML = "<img src = 'rat.jpg'>";
+                    }
+
+                     if(year % 12 == 5)
+                     {
+                       document.getElementById("picture").innerHTML = "<img src = 'ox.jpg'>";
+                      }
+
+                       if(year % 12 == 6)
+                       {
+                         document.getElementById("picture").innerHTML = "<img src = 'tiger.jpg'>";
+                        }
+
+                        if(year % 12 == 7)
+                         {
+                           document.getElementById("picture").innerHTML = "<img src = 'rabbit.jpg'>";
+                          }
+
+                           if(year % 12 == 8)
+                           {
+                             document.getElementById("picture").innerHTML = "<img src = 'dragon.jpg'>";
+                            }
+
+                             if(year % 12 == 9)
+                             {
+                               document.getElementById("picture").innerHTML = "<img src = 'snake.jpg'>";
+                              }
+
+                               if(year % 12 == 1)
+                               {
+                                 document.getElementById("picture").innerHTML = "<img src = 'horse.jpg'>";
+                                }
+
+                                 if(year % 12 == 11)
+                                 {
+                                   document.getElementById("picture").innerHTML = "<img src = 'goat.jpg'>";
+                                  }
+                                }
+    </script>
+    <style>
+body{
+  background-color: #ff4d4d;
+}
+h2{
+  color: #ff944d;
+}
+    </style>
+  <head>
+    <body>
+      <center>
+      <h2>Zodiac calculator</h2>
+      <input type = "text" id = "year">
+      <input type = "button" value = "ok" onclick = "animalFind()">
+      <br>
+      <span id = "picture"> </span>
+    </center>
+    </body>
+  </html>
